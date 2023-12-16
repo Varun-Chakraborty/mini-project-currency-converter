@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+select,
+button {
+    outline: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+
+input {
+    cursor: text;
+}
+
+body {
+    background: #f4e4ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100svh;
+
+    >.container {
+        border: 1px solid;
+        padding: 2rem;
+        background: white;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+
+
+        >h2 {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        >.accept-value {
+            padding: 1rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+
+            >p {
+                text-transform: capitalize;
+                font-size: 1.2rem;
+            }
+
+            >input {
+                width: 100%;
+                padding: .5rem;
+                border: 1px solid;
+                border-radius: 10px;
+                font-size: 1rem;
+                text-transform: capitalize;
+            }
+        }
+
+        >.select-units {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            >.conversion-mark {
+                font-size: 1.5rem;
+                transition: all .4s;
+            }
+
+            >div {
+                >p {
+                    text-transform: capitalize;
+                    text-align: center;
+                }
+
+                >.flag-n-option {
+                    padding: 2px;
+                    border: 1px solid;
+                    border-radius: 8px;
+                    display: flex;
+                    gap: 2px;
+
+                    >img {
+                        height: 100%;
+                    }
+
+                    >select {
+                        text-transform: uppercase;
+                        border: none;
+                    }
+                }
+            }
+        }
+
+        >.conversion-rate {
+            padding: 1rem 0;
+        }
+
+        >.convert-button {
+            padding: .7rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            background: rgb(169, 62, 169);
+            color: white;
+            border: 1px solid purple;
+            text-transform: uppercase;
+        }
+
+        >.convert-button:hover {
+            background: rgb(207, 91, 207);
+        }
+    }
+
+}
