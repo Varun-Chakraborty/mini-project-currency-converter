@@ -29,7 +29,7 @@ The project uses:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/currency-converter.git
+   git clone https://github.com/Varun-Chakraborty/currency-converter.git
 2. Open the project directory:
     ```bash
     cd currency-converter
